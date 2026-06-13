@@ -1,0 +1,22 @@
+config BUILD_OUTPUT_UF2
+    default y
+
+config ZMK_BATTERY_REPORTING
+    default y
+
+if SHIELD_EXTRAWIDE_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "extrawide"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_EXTRAWIDE_LEFT
+
+if SHIELD_EXTRAWIDE_LEFT || SHIELD_EXTRAWIDE_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_EXTRAWIDE_LEFT || SHIELD_EXTRAWIDE_RIGHT
