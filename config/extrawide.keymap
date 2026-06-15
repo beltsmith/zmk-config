@@ -190,7 +190,7 @@
                 &trans    &trans    &trans    &trans   &trans    &trans     &kp Y     &trans    &trans    &trans    &trans    &trans    &trans    &trans
                 &trans    &trans    &trans    &trans   &trans    &trans     &kp H     &trans    &trans    &trans    &trans    &trans    &trans    &trans
                 &kp LSHFT &trans    &trans    &trans   &trans    &trans     &kp N     &trans    &trans    &trans    &trans    &trans    &trans    &trans
-                                    &trans    &kp ESC  &kp LCTRL &kp SPACE  &trans    &trans    &kp RET   &trans    &trans    &trans
+                                    &kp LALT  &kp ESC  &kp LCTRL &kp SPACE  &trans    &trans    &kp RET   &trans    &trans    &trans
                                                        &kp LALT  &kp LSHFT  &mo MOVEL &trans    &mo MOVEL  &trans
             >;
         };
