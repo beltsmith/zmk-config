@@ -163,8 +163,8 @@
                 &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans     &trans    &trans
                 &trans    &trans    &trans    &trans    &kp TAB   &trans    &trans    &trans    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans    &trans
                 &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans     &trans    &trans
-                                    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &kp TAB   &trans    &trans
-                                                        &trans    &trans    &trans    &trans    &kp RET   &kp MINUS
+                                    &trans    &trans    &trans    &trans    &trans    &trans    &kp RET   &kp TAB   &trans    &trans
+                                                        &trans    &trans    &trans    &trans    &trans    &kp MINUS
             >;
         };
 
