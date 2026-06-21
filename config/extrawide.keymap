@@ -17,13 +17,13 @@
 
 // PAR layers
 #define MOVPAR &lt MOVEL LPAR
-#define SYMLPAR &lt SYM LPAR
-#define SYMRPAR &lt SYM RPAR
+#define SYMLPAR &lt SYML LPAR
+#define SYMRPAR &lt SYMR RPAR
 
 // BKT layers
 #define NUMBKT &lt NUM RBKT
-#define SYMBKT &lt SYM RBKT
-#define SYMLBKT &lt SYM LBKT
+#define SYMRBKT &lt SYMR RBKT
+#define SYMLBKT &lt SYML LBKT
 #define MOVBKT &lt MOVEL LBKT
 
 // PAR gui
@@ -38,12 +38,12 @@
 #define COLEL 1
 #define BRACEL 2
 #define RUNE 3
-#define SYM 4
-#define WOW 5
-#define MOVEL 6
-#define NUM 7
-#define GAMES 8
-#define QUD 9
+#define SYML 4
+#define SYMR 5
+#define WOW 6
+#define MOVEL 7
+#define NUM 8
+#define GAMES 9
 #define TRANS 10
 #define LAYERS 11
 
@@ -130,7 +130,7 @@
             >;
         };
 
-        sym_layer {
+        syml_layer {
             display-name = "Symbols";
             bindings = < //                                                        ||
                 &trans    &kp F1    &kp F2    &kp F3   &kp F4    &kp F5     &trans    &trans    &kp F6          &kp F7    &kp F8    &kp F9    &kp F10   &kp F11
@@ -139,6 +139,18 @@
                 &trans    &kp TAB   &trans    &trans   &kp TAB   &kp GRAVE  &trans    &trans    &kp BSLH        &kp SQT   &kp EQUAL &trans    &trans    &trans
                                     &trans    &trans   &trans    &kp DEL    &trans    &trans    &trans          &trans    &trans    &trans
                                                        &trans    &trans     &trans    &trans    &kp RET         &trans
+            >;
+        };
+
+        symr_layer {
+            display-name = "Symbols";
+            bindings = < //                                                        ||
+                &trans    &kp F1    &kp F2    &kp F3   &kp F4    &kp F5     &trans    &trans    &kp F6          &kp F7    &kp F8    &kp F9    &kp F10   &kp F11
+                &trans    &trans    &kp LPAR  &kp LBRC &kp LBKT  &trans     &trans    &trans    &trans          &kp RBKT  &kp RBRC  &kp RPAR  &trans    &trans
+                &trans    &kp EXCL  &kp AT    &kp HASH &kp DLLR  &kp PRCNT  &trans    &trans    &kp CARET       &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp SQT
+                &trans    &kp TAB   &trans    &trans   &kp TAB   &kp GRAVE  &trans    &trans    &kp BSLH        &kp SQT   &kp EQUAL &trans    &trans    &trans
+                                    &trans    &trans   &trans    &kp DEL    &trans    &trans    &trans          &trans    &trans    &trans
+                                                       &trans    &trans     &trans    &trans    &trans         &trans
             >;
         };
 
@@ -169,7 +181,6 @@
         };
 
 
-
         num_layer {
             display-name = "Numbers";
             bindings = <
@@ -194,18 +205,6 @@
             >;
         };
 
-        qud_layer {
-            display-name = "Qud";
-            bindings = <
-                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-                &kp LSHFT &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-                                    &trans    &kp ESC   &kp LCTRL &kp SPACE &trans    &trans    &kp RET   &trans    &trans    &trans
-                                                        &kp LALT  &kp LSHFT &mo MOVEL &trans    &trans    &kp RSHFT
-            >;
-        };
-
         trans_layer {
             display-name = "Transparent";
             bindings = < //                                                        ||
@@ -223,7 +222,7 @@
             display-name = "Layers";
             bindings = <
                 &trans    &trans    &trans      &trans      &trans      &trans     &studio_unlock    &studio_unlock    &trans     &trans       &trans    &trans    &trans    &trans
-                &trans    &tog QUD  &tog WOW    &trans      &tog RUNE   &trans     &trans            &trans            &trans     &trans       &trans    &trans    &trans    &trans
+                &trans    &trans    &tog WOW    &trans      &tog RUNE   &trans     &trans            &trans            &trans     &trans       &trans    &trans    &trans    &trans
                 &trans    &trans    &trans      &trans      &trans      &tog GAMES &trans            &trans            &trans     &trans       &trans    &trans    &trans    &to DEFAULT
                 &trans    &trans    &trans      &trans      &bt BT_CLR  &trans     &trans            &trans            &trans     &tog COLEL   &trans    &trans    &trans    &trans
                                     &trans      &bt BT_CLR  &trans      &trans     &trans            &trans            &bt BT_NXT &bt BT_PRV   &trans    &trans
