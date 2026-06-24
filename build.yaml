@@ -14,3 +14,5 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: nice_nano
     shield: extrawide_right
+  - board: nice_nano
+    shield: settings_reset
