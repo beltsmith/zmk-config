@@ -124,8 +124,8 @@
                 &trans    &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F8           &trans    &kp F6    &kp F7    &kp F8    &kp F9    &kp F10   &trans
                 &trans    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &trans           &trans    &mkp LCLK &mkp LCLK &trans    &trans    &trans    &trans
                 &trans    &trans    &kp W     &trans    &kp N6    &kp N7    &trans           &trans    &mkp LCLK &mkp LCLK &trans    &trans    &trans    &trans
-                &kp LSHFT &trans    &kp S     &trans    &kp N8    &kp N9    &trans           &trans    &mkp LCLK &kp ESC   &trans    &trans    &trans    &kp RSHFT
-                                    &trans    &trans    &trans    &kp SPACE &trans           &trans    &trans    &trans    &trans    &trans
+                &kp LSHFT &trans    &kp R     &trans    &kp N8    &kp N9    &trans           &trans    &mkp LCLK &kp ESC   &trans    &trans    &trans    &kp RSHFT
+                                    &trans    &mkp LCLK &trans    &kp SPACE &trans           &trans    &trans    &trans    &trans    &trans
                                                         &trans    &kp RET   &kp LSHFT        &trans    &trans    &trans
             >;
         };
